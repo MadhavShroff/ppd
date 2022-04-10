@@ -6,6 +6,12 @@ function init() {
   createWorld();
   createPrimitive();
   animation();
+
+  canvas = document.querySelector('canvas')
+  canvas.style.width='100%';
+  canvas.style.height='100%';
+  canvas.width  = canvas.offsetWidth;
+  canvas.height = canvas.offsetHeight;
 }
 
 var Theme = {_darkred: 0x000000}
@@ -36,12 +42,16 @@ function createWorld() {
 }
 
 function onWindowResize() {
+  canvas.style.minWidth='100vw';
+  canvas.style.minHeight='105vh';
+  canvas.width  = canvas.offsetWidth;
+  canvas.height = canvas.offsetHeight;
+
   _width = window.innerWidth;
   _height = window.innerHeight;
   renderer.setSize(_width, _height);
   camera.aspect = _width / _height;
   camera.updateProjectionMatrix();
-  console.log('- resize -');
 }
 
 //--------------------------------------------------------------------
