@@ -77,32 +77,31 @@ p {
 
   #shape1 {
     position: absolute;
-    left: 20%;
-    top: 35%;
+    left: 35%;
+    top: 45%;
     filter: invert(16%) sepia(100%) saturate(2742%) hue-rotate(215deg) brightness(99%) contrast(105%);
-    transform: rotate(30deg) scale(0.4);
+    transform: rotate(30deg) scale(0.6);
   }
-  
   #shape2 {
     position: absolute;
-    right: 0;
+    right: -50px;
     filter: invert(16%) sepia(100%) saturate(2742%) hue-rotate(215deg) brightness(99%) contrast(105%);
-    transform: rotate(30deg) translateX(170px) translateY(-130px) scale(0.4);
+    transform: translateY(-130px) scale(0.6);
   }
   #shape4 {
     position: absolute;
-    bottom: -5%;
+    bottom: 50%;
     left: -25%;
     z-index: 0;
     filter: invert(16%) sepia(100%) saturate(2742%) hue-rotate(215deg) brightness(99%) contrast(105%);
-    transform: scale(0.4) rotate(10deg)
+    transform: scale(0.6) rotate(10deg)
   }
   #shape5 {
     position: absolute;
-    top: -30%;
+    top: 65%;
     left: -240px;
     filter: invert(16%) sepia(100%) saturate(2742%) hue-rotate(215deg) brightness(99%) contrast(105%);
-    transform: rotate(30deg) scale(0.40);
+    transform: rotate(30deg) scale(0.50);
   }
 }
 
