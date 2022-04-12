@@ -136,16 +136,18 @@ body {
     display: flex;
     width: 100vw;
     height: 100vh;
-    font-size: 112px;
+    font-size: 72px;
     color: white;
-    font-weight: 800;
+    font-weight: 600;
     justify-content: center;
+    text-align: center;
     align-items: center;
     position: absolute;
+    line-height: 78px;
   }
 
   #familyImage {
-    border-radius: 16px;
+    border-radius: 22;
   }
 }
 
