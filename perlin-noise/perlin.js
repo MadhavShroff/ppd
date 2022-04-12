@@ -1,6 +1,9 @@
+//--------------------------------------------------------------------
 // Three JS
 
 window.addEventListener('load', init, false);
+
+var dataUrl;
 
 function init() {
   createWorld();
@@ -12,6 +15,7 @@ function init() {
   canvas.style.height='100%';
   canvas.width  = canvas.offsetWidth;
   canvas.height = canvas.offsetHeight;
+  dataUrl = canvas.toDataURL();
 }
 
 var Theme = {_darkred: 0x000000}
