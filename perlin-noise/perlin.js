@@ -1,3 +1,34 @@
+var arrowRight = document.querySelector("#right");
+var arrowDown = document.querySelector("#down");
+var wrapper = document.querySelector("body > div.wrapper");
+
+document.addEventListener('scroll', function (e) { // Set arrow direction based on window scroll location
+  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+    document.querySelector("#down").style.transform = "rotate(180deg)";
+  } else {
+    document.querySelector("#down").style.transform = "rotate(0deg)";
+  }
+  if(window.scrollX < document.querySelector("body > div.wrapper").offsetWidth) {
+    document.querySelector("#right").style.transform = "rotate(0deg)";
+  } else {
+    document.querySelector("#right").style.transform = "rotate(180deg)";
+  }
+});
+
+$(document).ready(function() {
+  document.querySelector("#right").onclick = () => {
+    console.log("Clicked");
+    document.body.scrollTop = 0;
+    document.body.scrollLeft = 0;
+  };
+  document.querySelector("#down").onclick = () => {
+    console.log("Clicked");
+
+    document.body.scrollTop = 0;
+    document.body.scrollLeft = 0;
+  };
+});
+
 //--------------------------------------------------------------------
 // Three JS
 

@@ -1,7 +1,5 @@
 @font-face {
   font-family: 'Product Sans';
-  font-style: normal;
-  font-weight: 400;
   src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
 }
 
@@ -53,10 +51,16 @@ body {
   bottom: 2rem;
   right: 2rem;
   position: fixed;
+  z-index: 10;
 }
-
 /* Mobile Devices */
 @media screen and (max-width: 994px) {
+
+  .arrow {
+    transform: scale(4);
+    padding: 2em 3em 3em 0;
+  }
+
   .h1, .p {
     border-radius: 16px;
   }
@@ -68,8 +72,9 @@ body {
 
   .p {
     max-width: 95vw;
-    font-size: 39px;
+    font-size: 50px;
     padding: 2.2rem;
+    font-weight: 100;
   }
 
   #right {
@@ -136,23 +141,28 @@ body {
     display: flex;
     width: 100vw;
     height: 100vh;
-    font-size: 72px;
+    font-size: 160px;
     color: white;
     font-weight: 600;
     justify-content: center;
     text-align: center;
     align-items: center;
     position: absolute;
-    line-height: 78px;
+    line-height: 165px;
   }
 
   #familyImage {
-    border-radius: 22;
+    border-radius: 22px;
   }
 }
 
 /* Larger Screens */
 @media only screen and (min-width: 995px) {
+
+  .arrow {
+    transform: scale(3);
+    padding: 0 0 1em 0;
+  }
 
   #centerContent {
     visibility: collapse;
@@ -170,7 +180,7 @@ body {
 
   .p {
     max-width: 95vw;
-    font-size: 19px;
+    font-size: 28px;
   }
 
   #right {
@@ -254,7 +264,7 @@ body {
   color: #123693;
   z-index: 1;
   background-color: whitesmoke;
-  opacity: 0.93;
+  opacity: 0.94;
 }
 
 #slideThree > div > div.row > div.col-md-6 > div.h1,
@@ -285,7 +295,7 @@ body {
 #slideFive > div > div > div.col-md-4 > div:nth-child(1) {
   border-color: #FBBC05;
 }
-#slideFive > div > div > div.col-md-4 > div:nth-child(2) {
+#slideFive > div > div.row > div.col-md-8 > div.h1 {
   border-color: #34A853;
 }
 
@@ -326,5 +336,20 @@ max-width: 100%;
   margin: 1.5rem 1.5rem 0 0rem;
   max-width: 100%;
   width: 100%;
+}
+
+#footer {
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+strong {
+  font-weight: 900;
 }
 
