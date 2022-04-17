@@ -17,13 +17,10 @@ document.addEventListener('scroll', function (e) { // Set arrow direction based 
 
 $(document).ready(function() {
   document.querySelector("#right").onclick = () => {
-    console.log("Clicked");
     document.body.scrollTop = 0;
     document.body.scrollLeft = 0;
   };
   document.querySelector("#down").onclick = () => {
-    console.log("Clicked");
-
     document.body.scrollTop = 0;
     document.body.scrollLeft = 0;
   };

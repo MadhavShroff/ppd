@@ -53,6 +53,21 @@ body {
   position: fixed;
   z-index: 10;
 }
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+
 /* Mobile Devices */
 @media screen and (max-width: 994px) {
 
@@ -67,12 +82,12 @@ body {
 
   .h1 {
     max-width: 95vw;
-    font-size: 98px;
+    font-size: 10vw;
   }
 
   .p {
     max-width: 95vw;
-    font-size: 50px;
+    font-size: 4vw;
     padding: 2.2rem;
     font-weight: 100;
   }
@@ -141,14 +156,14 @@ body {
     display: flex;
     width: 100vw;
     height: 100vh;
-    font-size: 160px;
+    font-size: 120px;
     color: white;
     font-weight: 600;
     justify-content: center;
     text-align: center;
     align-items: center;
     position: absolute;
-    line-height: 165px;
+    line-height: 135px;
   }
 
   #familyImage {
@@ -333,8 +348,9 @@ max-width: 100%;
 #familyImage {
   border-radius: 10px;
   border-color: black;
+  /* padding: 1.5rem 1.5rem 1.5rem 0rem; */
   margin: 1.5rem 1.5rem 0 0rem;
-  max-width: 100%;
+  max-width: 98%;
   width: 100%;
 }
 
